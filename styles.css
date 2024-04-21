@@ -6,7 +6,7 @@ body, h1, h2, p {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #2a2a72; /* Dark indigo blue background */
+    background-color: #2a2a72; /* Dark indigo blue background */ 
     color: #f0f0f0; /* Light grey text for readability */
     display: flex;
     flex-direction: column;
@@ -38,6 +38,35 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+#mindfulness {
+    background-image: url('/p/p1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Adjust the opacity as needed */
+    background-color: rgba(255, 255, 255, 0.2); /* Light white background color */
+}
+  
+#education {
+    background-image: url('/p/p2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
+#resources {
+    background-image: url('/p/p3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
+
 
 section:hover {
     background-color: #3a3a85; /* Slightly lighter for interaction */
