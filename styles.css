@@ -11,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    animation-name: fadeIn;
+    animation-duration: 1s; /* Adjust duration as needed */
+    animation-fill-mode: forwards; /* Makes sure the end state persists after the animation */
 }
 
 header {
@@ -22,6 +25,11 @@ header {
 header h1 {
     color: #c9ada7; /* Soft pink for a calming effect */
 }
+
+@keyframes fadeIn {
+    from { background-color: black; }
+    to { background-color: #2a2a72; } /* Your site's original background color */
+  }
 
 main {
     flex: 1;
