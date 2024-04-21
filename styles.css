@@ -11,78 +11,95 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    animation-name: fadeIn;
-    animation-duration: 1s; /* Adjust duration as needed */
-    animation-fill-mode: forwards; /* Makes sure the end state persists after the animation */
+    animation: fadeIn 5s ease-out forwards;
+}
+
+@keyframes headerFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 header {
-    background-color: #161625; /* Even darker shade for header */
-    padding: 20px;
+    background-color: #18183e; /* Even darker shade for header */
+    padding: 16px;
     text-align: center;
+    animation: headerFadeIn 3.5s ease-out forwards;
 }
 
 header h1 {
     color: #c9ada7; /* Soft pink for a calming effect */
 }
 
+.fixed-element, .another-fixed-element {
+    animation: fadeIn 3s ease-out forwards;
+}
+
 @keyframes fadeIn {
-    from { background-color: black; }
-    to { background-color: #2a2a72; } /* Your site's original background color */
+    from {
+      background-color: rgb(0, 0, 0);
+    }
+    to {
+      background-color: #2a2a72; 
+    }
   }
 
 main {
     flex: 1;
     display: flex;
 }
+.section {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #3a3a85; /* Default background color for sections */
+    color: white;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+@keyframes sectionFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 section {
     flex: 1;
-    padding: 20px;
+    background-color: #3a3a85; /* Default background color for sections */
+    color: white;
+    transition: background-color 0.3s; /* Smooth background color transition */
     cursor: pointer;
-    transition: background-color 0.3s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: sectionFadeIn 3.5s ease-out forwards;
 }
 
-#mindfulness {
-    background-image: url('/p/p1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8; /* Adjust the opacity as needed */
-    background-color: rgba(255, 255, 255, 0.2); /* Light white background color */
-}
-  
-#education {
-    background-image: url('/p/p2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-  
-#resources {
-    background-image: url('/p/p3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-  
-
-
+/* Hover effect explicitly defined after the base style */
 section:hover {
-    background-color: #3a3a85; /* Slightly lighter for interaction */
+    background-color: #4a4a95; /* Lighter blue on hover */
+}
+
+@keyframes footerFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 footer {
     background-color: #161625;
     color: #c9ada7;
     text-align: center;
-    padding: 20px;
+    padding: 12px;
+    animation: footerFadeIn 3.5s ease-out forwards;
 }
