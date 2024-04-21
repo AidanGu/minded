@@ -1,0 +1,51 @@
+/* styles.css */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2a72; /* Dark indigo blue background */
+    color: #f0f0f0; /* Light grey text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #161625; /* Even darker shade for header */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #c9ada7; /* Soft pink for a calming effect */
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section:hover {
+    background-color: #3a3a85; /* Slightly lighter for interaction */
+}
+
+footer {
+    background-color: #161625;
+    color: #c9ada7;
+    text-align: center;
+    padding: 20px;
+}
