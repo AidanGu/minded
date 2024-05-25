@@ -1,2 +1,2 @@
 # minded
-hacktech 2024
+HackTech 2024 + additions
